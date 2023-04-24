@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #738290;
+    color: #e4f0d0;
+}
+
+div{
+    display: flex;
+}
+
+h1{
+    font-size: 42px;
+    padding: 50px;
+}
+
+.weapons-container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 300px;
+}
+
+.weapon-icon{
+    width: 75px;
+    padding: 10px;
+}
+
+.weapon-icon:hover,
+.weapon-icon:active{
+    background-color: #a1b5d8;
+    border-radius: 6px;
+}
+

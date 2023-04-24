@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+        </header>
+            <div class="container">
+                <div class="player-container">
+                    <h2> Choose your weapon!</h2>
+                    <div class="weapons-container">
+                        <img id="rock" class="weapon-icon" src="images/rock.png" alt="rock icon">
+                        <img id="paper" class="weapon-icon" src="images/paper.png" alt="paper icon">
+                        <img id="scissors" class="weapon-icon" src="images/scissors.png" alt="scissors icon">
+                    </div>
+                </div>
+                <div class="player-container">
+                    <h2>The computer has chosen!</h2>
+                    <div class="weapons-container">
+                        <img class="weapon-icon" id="computer-choice-el" src="images/computer.png" alt="chosen weapon icon">
+                    </div>
+                </div>
+            </div>
+        <section class="score">
+            <h1>Current Score</h1>
+            <div class="container">
+                <div class="player-container">
+                    <h2>Player Score</h2>
+                    <h1 id="player-score"></h1>
+                </div>
+                <div class="player-container">
+                    <h2>Computer Score</h2>
+                    <h1 id="computer-score"></h1>
+                </div>
+            </div>
+        </section>
+    <script src="index.js"></script>
+    </body>
+</html>
