@@ -16,14 +16,9 @@ weapons = ["images/rock.png", "images/paper.png", "images/scissors.png"]
 
 computerChoice = ""
 
-//assign computerChoice
-function getComputerChoice(){
-   let computerChoice = weapons[Math.floor(Math.random()*3)]
-   console.log(computerChoice)
-}
-
 //when clicking on rock, paper, or scissors - run function to get computer choice
 rock.addEventListener("click", function(){
+   let computerChoice = weapons[Math.floor(Math.random()*3)]
    if (computerChoice === "images/paper.png"){
       computerScore += 1
    } else if (computerChoice === "images/scissors.png"){
@@ -32,8 +27,30 @@ rock.addEventListener("click", function(){
    }
    playerScoreEl.innerHTML = playerScore
    computerScoreEl.innerHTML = computerScore
+   computerChoiceEl.src = computerChoice
 })
-paper.addEventListener("click", getComputerChoice)
-scissors.addEventListener("click", getComputerChoice)
-
+paper.addEventListener("click", function(){
+   let computerChoice = weapons[Math.floor(Math.random()*3)]
+   if (computerChoice === "images/scissors.png"){
+      computerScore += 1
+   } else if (computerChoice === "images/rock.png"){
+      playerScore += 1
+   } else {
+   }
+   playerScoreEl.innerHTML = playerScore
+   computerScoreEl.innerHTML = computerScore
+   computerChoiceEl.src = computerChoice
+})
+scissors.addEventListener("click", function(){
+   let computerChoice = weapons[Math.floor(Math.random()*3)]
+   if (computerChoice === "images/rock.png"){
+      computerScore += 1
+   } else if (computerChoice === "images/paper.png"){
+      playerScore += 1
+   } else {
+   }
+   playerScoreEl.innerHTML = playerScore
+   computerScoreEl.innerHTML = computerScore
+   computerChoiceEl.src = computerChoice
+})
 //compare computerChoice to the clicked element
